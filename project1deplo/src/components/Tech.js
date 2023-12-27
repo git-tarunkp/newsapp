@@ -13,9 +13,7 @@ const Tech = () => {
   useEffect(() => {
 
     const getArticles = async () => {
-      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology 
-
-')
+      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology ')
       console.log(response)
       setArticles(response.data.results)
     }
@@ -27,9 +25,7 @@ const Tech = () => {
   
   const [results,setResults]=useState([])
   const fetchData=(value)=>{
-    fetch("https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology 
-
-")
+    fetch("https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology ")
     .then((response)=> response.json())
     .then((json)=>{
       const results=json.results.filter((user)=>{
@@ -109,12 +105,12 @@ const Tech = () => {
   
 
 <div style="text-align:center"">
-  <div class="card bg-dark text-light mb-3 d-inline-block my-3 px-2 py-2" style="width: 18rem;marginLeft:10px;marginRight:10px">
-  <img src=` + result.image_url +` style="height:200px; width:270px;" class="card-img-top" alt="..."/>
+  <div class="card bg-dark text-light mb-3 d-inline-block my-3 px-2 py-2" style="width: 50rem;marginLeft:10px;marginRight:10px">
+  <img src=` + result.image_url +` style="height:500px; width:500px;" class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">` + result.title + `</h5>
     <p class="card-text">` + result.description + `</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" >visit site</a>
   </div>
 </div>
 </div>
@@ -298,7 +294,7 @@ const Tech = () => {
         <div className="container py-5 text-center">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <h2>Demo section 4</h2>
+              <h2>THE NEWS APP</h2>
               <p className="text-muted lead">Keeping up with the latest news is essential in todays world from current affairs to technological developments, staying informed makes all the difference.</p>
             </div>
           </div>
