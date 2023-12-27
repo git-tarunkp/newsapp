@@ -264,7 +264,7 @@ const Home = () => {
           
         //  <a href={result.url}>{result.title}</a>
 
-          <div style={{backgroundColor:"grey", borderRadius:"1px",color:"white"}} onClick={() => handleClick(result)}>{result.title}</div>
+          <a href="#" style={{backgroundColor:"grey", borderRadius:"1px",color:"white"}} onClick={() => handleClick(result)}>{result.title}</a>
         )
       })}
   
