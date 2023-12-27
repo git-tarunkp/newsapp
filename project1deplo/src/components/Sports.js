@@ -12,9 +12,9 @@ const Sports = () => {
   useEffect(() => {
 
     const getArticles = async () => {
-      const response = await axios.get('https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=04631de072794e8680851c9e53c5bd75')
+      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=sports')
       console.log(response)
-      setArticles(response.data.articles)
+      setArticles(response.data.results)
     }
     getArticles()
   }, [])
@@ -25,10 +25,10 @@ const Sports = () => {
   
   const [results,setResults]=useState([])
   const fetchData=(value)=>{
-    fetch("https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=04631de072794e8680851c9e53c5bd75")
+    fetch("https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=sports")
     .then((response)=> response.json())
     .then((json)=>{
-      const results=json.articles.filter((user)=>{
+      const results=json.results.filter((user)=>{
         return value && user && user.title && user.title.toLowerCase().includes(value)
       })
       console.log(results);
