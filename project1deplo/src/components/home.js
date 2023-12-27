@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
 
     const getArticles = async () => {
-      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=education,other,politics ')
+      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_35493a04c74d2a2553389c2205bddad0c51b1&q=sports%20news&country=in&language=en&category=education,other,politics ')
       console.log(response)
       setArticles(response.data.results)
     }
