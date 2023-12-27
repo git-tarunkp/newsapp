@@ -13,9 +13,11 @@ const Tech = () => {
   useEffect(() => {
 
     const getArticles = async () => {
-      const response = await axios.get('https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=04631de072794e8680851c9e53c5bd75')
+      const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology 
+
+')
       console.log(response)
-      setArticles(response.data.articles)
+      setArticles(response.data.results)
     }
     getArticles()
   }, [])
@@ -25,10 +27,12 @@ const Tech = () => {
   
   const [results,setResults]=useState([])
   const fetchData=(value)=>{
-    fetch("https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=04631de072794e8680851c9e53c5bd75")
+    fetch("https://newsdata.io/api/1/news?apikey=pub_354832adfb850bb2618843bef68de0f95c1ac&q=sports%20news&country=in&language=en&category=technology 
+
+")
     .then((response)=> response.json())
     .then((json)=>{
-      const results=json.articles.filter((user)=>{
+      const results=json.results.filter((user)=>{
         return value && user && user.title && user.title.toLowerCase().includes(value)
       })
       console.log(results);
@@ -106,7 +110,7 @@ const Tech = () => {
 
 <div style="text-align:center"">
   <div class="card bg-dark text-light mb-3 d-inline-block my-3 px-2 py-2" style="width: 18rem;marginLeft:10px;marginRight:10px">
-  <img src=` + result.urlToImage +` style="height:200px; width:270px;" class="card-img-top" alt="..."/>
+  <img src=` + result.image_url +` style="height:200px; width:270px;" class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">` + result.title + `</h5>
     <p class="card-text">` + result.description + `</p>
@@ -282,8 +286,8 @@ const Tech = () => {
 
           <Newsitem title={article.title}
             description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage} />
+            url={article.link}
+            urlToImage={article.image_url} />
 
         )
       })}
