@@ -106,7 +106,7 @@ const Sports = () => {
 
 <div style="text-align:center"">
   <div class="card bg-dark text-light mb-3 d-inline-block my-3 px-2 py-2" style="width: 18rem;marginLeft:10px;marginRight:10px">
-  <img src=` + result.urlToImage +` style="height:200px; width:270px;" class="card-img-top" alt="..."/>
+  <img src=` + result.image_url +` style="height:200px; width:270px;" class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">` + result.title + `</h5>
     <p class="card-text">` + result.description + `</p>
@@ -292,7 +292,7 @@ const Sports = () => {
         <div className="container py-5 text-center">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <h2>Demo section 4</h2>
+              <h2>THE WORLD NEWS</h2>
               <p className="text-muted lead">Keeping up with the latest news is essential in todays world from current affairs to technological developments, staying informed makes all the difference.</p>
             </div>
           </div>
