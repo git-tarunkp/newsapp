@@ -166,7 +166,7 @@ const Home = () => {
         <section className="py-2 header text-center ">
           <div className="container py-5 text-black " >
             <header className="py-5">
-              <h1 className="display-4" style={{display:"inline"}}>"can you please take your promise back so that i can msg you" </h1>
+              <h1 className="display-4" style={{display:"inline"}}>"are ek bar promise to wapas to lo" </h1>
               <h1 className="display-4" style={{display:"inline " ,color:"red" ,background:"Highlight",borderRadius:"5px",paddingLeft:"10px",paddingRight:"10px",paddingTop:"0px"}}>please</h1>
               {/* <h1 className="display-4" style={{display:"inline" ,color:"red"}}>E</h1>
               <h1 className="display-4" style={{display:"inline" ,color:"red"}}>W</h1>
