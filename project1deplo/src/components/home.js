@@ -166,7 +166,7 @@ const Home = () => {
         <section className="py-2 header text-center ">
           <div className="container py-5 text-black " >
             <header className="py-5">
-              <h1 className="display-4" style={{display:"inline"}}>"NEWS" </h1>
+              <h1 className="display-4" style={{display:"inline"}}>NEWS</h1>
               <h1 className="display-4" style={{display:"inline " ,color:"red" ,background:"Highlight",borderRadius:"5px",paddingLeft:"10px",paddingRight:"10px",paddingTop:"0px"}}>APP</h1>
               {/* <h1 className="display-4" style={{display:"inline" ,color:"red"}}>E</h1>
               <h1 className="display-4" style={{display:"inline" ,color:"red"}}>W</h1>
@@ -174,7 +174,7 @@ const Home = () => {
               <p className="font-italic mb-1">INDIAN INSTITUTE OF TECHNOLOGY ,INDORE</p>
               <p className="font-italic">by
                 <a className="text-black" >
-                  TKP
+                  AS
                 </a>
               </p>
             </header>
