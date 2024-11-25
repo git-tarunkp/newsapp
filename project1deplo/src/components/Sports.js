@@ -334,7 +334,7 @@ const Sports = () => {
 
         <div className="text-center p-3" >
           © 2023 Copyright:
-          <a className="text-white" >TKP</a>
+          <a className="text-white" >AS</a>
         </div>
 
       </footer>
