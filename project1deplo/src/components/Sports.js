@@ -170,7 +170,7 @@ const Sports = () => {
               <p className="font-italic mb-1">INDIAN INSTITUTE OF TECHNOLOGY ,INDORE</p>
               <p className="font-italic">by
                 <a className="text-black" >
-                  TKP
+                  AS
                 </a>
               </p>
             </header>
